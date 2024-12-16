@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <title>proste obliczenia</title>
-      <meta charset="utf-8">
-  </head>
-  <body>
-    <div style="color: red;font-size: 200px;">
-      <script>
-        var liczba1=prompt("liczba1=","");
-        var m_gra=parseFloat(liczba1);
-        document.write("1/"+m_gra+"=");
-        document.write("1/"+m_gra*1.5+" +1/"+m_gra*5+" +1/"+m_gra*7.5+");<br>);
-      </scrip>
-     </div>                       
-  </body>
+<html lang="pl">
+
+<head>
+    <title>Zadanie 14 Grabarczyk</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="strona" style="color:red;font-size:50px;">
+        <script language="JavaScript">
+            let m_smu = prompt("Podaj ułamek egipski:", "");
+            let m = parseInt(m_gra)
+            let wynik1 = m + 2;
+            let wynik2 = (m+1)*(m+2)
+            let wynik3 = m*(m+1)
+            document.getElementById("strona").innerHTML = "1/" + m + " = 1/" + wynik1 + " + 1/" + wynik2 + " + 1/" + wynik3;
+        </script>
+    </div>
+</body>
+
 </html>
