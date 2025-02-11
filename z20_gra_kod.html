@@ -1,0 +1,79 @@
+<html>
+<head>
+</head>
+
+<body>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+ <html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    function AB_gra() {
+      let aX_gra = parseFloat(document.getElementById('aX').value);
+      let aY_gra = parseFloat(document.getElementById('aY').value);
+
+      let bX_gra = parseFloat(document.getElementById('bX').value);
+      let bY_gra = parseFloat(document.getElementById('bY').value);
+
+
+      document.getElementById("answer").innerHTML = "|AB|= "
+        + (Math.sqrt((aX_gra - bX_gra) ** 2 + (aY_gra - bY_gra) ** 2)).toFixed(2);
+    }
+
+    function BC_gra() {
+      let bX_gra = parseFloat(document.getElementById('bX').value);
+      let bY_gra = parseFloat(document.getElementById('bY').value);
+
+      let cX_gra = parseFloat(document.getElementById('cX').value);
+      let cY_gra = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|BC|= "
+        + (Math.sqrt((cX_gra - bX_gra) ** 2 + (cY_gra - bY_gra) ** 2)).toFixed(2);
+    }
+
+    function AC_gra() {
+      let aX_gra = parseFloat(document.getElementById('aX').value);
+      let aY_gra = parseFloat(document.getElementById('aY').value);
+      let cX_gra = parseFloat(document.getElementById('cX').value);
+      let cY_gra = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|AC|= "
+        + (Math.sqrt((aX_gra - cX_gra) ** 2 + (aY_gra - cY_gra) ** 2)).toFixed(2);
+    }
+
+  </script>
+
+  Podaj X punktu A: <input type="text" id="aX"><br>
+  Podaj Y punktu A: <input type="text" id="aY"><br>
+  <br>
+  <br>
+  Podaj X punktu B: <input type="text" id="bX"><br>
+  Podaj Y punktu B: <input type="text" id="bY"><br>
+  <br>
+  <br>
+  Podaj X punktu C: <input type="text" id="cX"><br>
+  Podaj Y punktu C: <input type="text" id="cY"><br>
+  <br>
+  <br>
+
+
+  <input type="button" value="Oblicz AB" onclick="AB_gra()"><br>
+  <br>
+  <input type="button" value="Oblicz BC" onclick="BC_gra()"><br>
+  <br>
+  <input type="button" value="Oblicz AC" onclick="AC_gra()"><br>
+  <br>
+  <br>
+
+  <div style="color:red;font-size:50px;" id="answer"></div>
+</body>
+
+</html>
+ <!-- Artur Grabarczyk -->
+</textarea>
+</body>
+</html>
