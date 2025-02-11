@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+
+<body>
+<textarea id="w3review" name="w3review" rows="10" cols="50">
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div style="color:green;font-size:60px;">
+	<script language="JavaScript">
+	var m_gra=prompt("m=","");
+	var m=parseFloat(m_gra);
+	var m1;
+
+	m1 = m*2;
+	document.write("1/"+m+"=1/"+m1+"+1/"+m1+" <br>");
+</script>
+</div>
+</body>
+</html>
+<!-- Grabarczyk Artur -->
+	
+</textarea>
+</body>
+</html>
