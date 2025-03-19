@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodzaje Pętli</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1 {
+            text-align: center;
+        }
+        .code {
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Rodzaje Pętli w JavaScript</h1>
+    
+    <h2>Pętla for</h2>
+    <p>Pętla for służy do wykonania określonej liczby iteracji.</p>
+    <pre class="code">
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+    </pre>
+
+    <h2>Pętla while (kontrolowane wejście)</h2>
+    <p>Pętla while sprawdza warunek przed wykonaniem iteracji.</p>
+    <pre class="code">
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+    </pre>
+
+    <h2>Pętla do...while (kontrolowane wyjście)</h2>
+    <p>Pętla do...while wykonuje kod przynajmniej raz, a potem sprawdza warunek.</p>
+    <pre class="code">
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+    </pre>
+
+    <button onclick="showLoops()">Pokaż wynik w konsoli</button>
+</div>
+
+<script>
+function showLoops() {
+    console.log("=== Pętla for ===");
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+
+    console.log("=== Pętla while ===");
+    let i = 0;
+    while (i < 5) {
+        console.log(i);
+        i++;
+    }
+
+    console.log("=== Pętla do...while ===");
+    i = 0;
+    do {
+        console.log(i);
+        i++;
+    } while (i < 5);
+}
+</script>
+
+</body>
+</html>
