@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzanie trójkąta - Grabarczyk</title>
+</head>
+<body>
+<div style="font-size: 28px; color: darkred;">
+    <script>
+        let a_gra, b_gra, c_gra;
+        let warunek_gra;
+
+        do {
+            a_gra = parseFloat(prompt("Podaj bok a:"));
+            b_gra = parseFloat(prompt("Podaj bok b:"));
+            c_gra = parseFloat(prompt("Podaj bok c:"));
+
+            warunek_gra =
+                a_gra > 0 &&
+                b_gra > 0 &&
+                c_gra > 0 &&
+                (a_gra + b_gra > c_gra) &&
+                (a_gra + c_gra > b_gra) &&
+                (b_gra + c_gra > a_gra);
+
+            if (!warunek_gra) {
+                alert("To nie są poprawne boki trójkąta! Spróbuj ponownie.");
+            }
+        } while (!warunek_gra);
+
+        document.write("Poprawne boki trójkąta: " + a_gra + ", " + b_gra + ", " + c_gra);
+    </script>
+</div>
+</body>
+</html>
