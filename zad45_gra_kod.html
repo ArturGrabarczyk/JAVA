@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 45 - Kod</title>
+</head>
+<body>
+    <div>
+        <script>
+            let liczba_gra = parseInt(prompt("Podaj liczbę:"));
+            let ile_razy_gra = 12;
+            let wielkosc_liter_gra = 42;
+
+            document.write("ilość wykonania pętli = " + ile_razy_gra + "<br>");
+            document.write("wielkość liter = " + wielkosc_liter_gra + "px<br><br>");
+
+            for (let i_gra = 1; i_gra <= ile_razy_gra; i_gra++) {
+                if (liczba_gra % 2 === 0) {
+                    document.write("<span style='color:blue; font-size:" + wielkosc_liter_gra + "px;'>Grabarczyk</span><br>");
+                } else {
+                    document.write("<span style='color:green; font-size:" + wielkosc_liter_gra + "px;'>Artur</span><br>");
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
