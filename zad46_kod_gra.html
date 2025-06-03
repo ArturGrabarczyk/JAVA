@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Kod - Zadanie 46</title>
+</head>
+<body>
+<pre style="font-size: 18px; color: darkblue;">
+let h_gra, a_gra;
+
+do {
+    let liczba1 = prompt("Wysokość = ", "");
+    h_gra = parseFloat(liczba1);
+} while (h_gra <= 0);
+
+do {
+    let liczba2 = prompt("Podstawa = ", "");
+    a_gra = parseFloat(liczba2);
+} while (!(a_gra > 0));
+
+let Pole = (a_gra * h_gra) / 2;
+document.write("Pole = " + Pole.toFixed(2) + " cm²");
+</pre>
+</body>
+</html>
